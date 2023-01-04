@@ -1,3 +1,42 @@
+try 1st 
+setting.py
+
+template
+BASE_DIR,"templates"
+
+import os
+STATIC_URL = '/static/'
+MEDIA_URL='/media/'
+MEDIA_ROOT=BASE_DIR / 'media'
+
+working urls.py
+from django.conf import settings
+from django.conf.urls.static import static
+
++ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+get image in html
+
+<img src="{{ product.image.url }}" alt="{{ product.product }}">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1. setting.py
 
 	1. 'DIRS': [BASE_DIR,"templates"],
